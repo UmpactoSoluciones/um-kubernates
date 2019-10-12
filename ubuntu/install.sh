@@ -26,6 +26,8 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 # JOIN NODES kubeadm join 192.168.100.52:6443 --token sveo3d.lz6jiikiueo48v9l \
     --discovery-token-ca-cert-hash sha256:cf06bee02f1cc746bf6f8c211c10d855e34e1d47754ca0e4c372e01bf97233d6 
     
+    kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+    
     
 # INSTALL KUBERNATE DASRHBOARD
 
